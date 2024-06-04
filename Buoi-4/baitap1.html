@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tạo Layout cơ bản</title>
+    <style>
+      .header {
+        display: flex;
+        height: 50px;
+
+        .logo {
+          width: 30%;
+          background-color: yellow;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          display: flex;
+        }
+        .banner {
+          width: 70%;
+          background-color: aquamarine;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: 100%;
+          display: flex;
+        }
+      }
+      .head-link {
+        width: 100%;
+        height: 30px;
+        justify-content: center;
+        background-color: blueviolet;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        color: azure;
+      }
+      .content {
+        display: flex;
+        height: 300px;
+        padding: 0;
+
+      }
+      .left {
+        display: flex;
+        text-align: center;
+        width: 15%;
+        background-color: bisque;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .right {
+        text-align: center;
+        display: flex;
+        width: 15%;
+        background-color: bisque;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .content-center {
+        display: flex;
+        width: 70%;
+        height: 100%;
+        text-align: center;
+        background-color: brown;
+        justify-content: center;
+        align-items: center;
+        color: azure;
+      }
+      .footer {
+        display: flex;
+        background-color: blue;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100px;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">Logo</div>
+      <div class="banner">banner</div>
+    </div>
+    <div class="head-link">Head link</div>
+    <div class="content">
+      <div class="left">Left</div>
+      <div class="content-center">Content Center</div>
+      <div class="right">Right</div>
+    </div>
+    <div class="footer">Footer</div>
+  </body>
+</html>

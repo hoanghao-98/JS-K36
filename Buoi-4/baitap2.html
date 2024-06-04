@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo trang bằng Grid</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header header"
+          "sidebar-1 content content content sidebar-2"
+          "footer footer footer footer footer ";
+        text-align: center;
+      }
+
+      .header {
+        display: flex;
+        background-color: yellow;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        grid-area: header;
+        box-sizing: border-box;
+      }
+      .content {
+        height: 350px;
+        display: flex;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .sidebar-1 {
+        justify-content: center;
+        height: 100%;
+        width: 20%;
+        background-color: aquamarine;
+        align-items: center;
+        margin-left: 0;
+        grid-area: sidebar-1;
+      }
+      .sidebar-2 {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 20%;
+        background-color: aqua;
+        grid-area: sidebar-2;
+      }
+      .content-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60%;
+        background-color: blue;
+        grid-area: content;
+      }
+      .footer {
+        background-color: black;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item header">
+        <b>Phần Header</b>
+      </div>
+      <div class="grid-item content">
+        <div class="grid-item sidebar-1">
+          Phần Sidebar 1 -<br />
+          Phần Sidebar 1 -<br />
+          Phần Sidebar 1 -<br />
+          Phần Sidebar 1 -<br />
+        </div>
+        <div class="grid-item content-center">
+          Phần nội dung Web <br />
+          Phần nội dung Web <br />
+          Phần nội dung Web <br />
+          Phần nội dung Web <br />
+          Phần nội dung Web <br />
+          Phần nội dung Web <br />
+          Phần nội dung Web <br />
+          Phần nội dung Web <br />
+          Phần nội dung Web <br />
+        </div>
+        <div class="grid-item sidebar-2">
+          <p>Phần Siderbar 2</p>
+        </div>
+      </div>
+      <div class="grid-item footer">Phần Footer</div>
+    </div>
+  </body>
+</html>
